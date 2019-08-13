@@ -1,0 +1,42 @@
+<idea-plugin>
+  <id>com.javalive09.codebag.plugin</id>
+  <name>CodeBag</name>
+  <version>1.0</version>
+  <vendor email="javalive09@163.com" url="https://github.com/javalive09/CodeBag">200code</vendor>
+
+  <description><![CDATA[
+      <h1>Run CodeBag method</h1>
+      <br/>
+      <p><b>Run CodeBag method from android studio editor pop up menu.</b></p>
+      <br/>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <ul>
+        <li> v1.0 init first version 提供CodeBag 快速运行入口</li>
+      </ul>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="RunMethod" class="com.javalive09.codebag.Plugin" text="RunCodeBagMethod"
+            description="run code bag method">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
